@@ -1,0 +1,11 @@
+version: 0.1.0
+metrics:
+  quality: task_success, human_correction_rate, false_approval_rate
+  latency: latency_ms, p95_latency_ms
+  economy: input_tokens, output_tokens, estimated_cost
+  reliability: error_rate, retry_rate
+  traceability: source_trace_completeness, decision_link_completeness
+gates:
+  - no official record without guardian_verdict
+  - no evidence without source_trace
+  - no supersession without preserved predecessor
