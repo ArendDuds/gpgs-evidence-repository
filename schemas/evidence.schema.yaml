@@ -1,0 +1,18 @@
+version: 0.1.0
+required:
+  - evidence_id
+  - claim
+  - evidence_type
+  - source_trace
+  - guardian_verdict
+fields:
+  evidence_id: "EVD-####"
+  claim: string
+  evidence_type: "E0 Assertion | E1 Self-documented | E2 Organizational | E3 Third-party | E4 Quantified outcome | E5 Publicly verifiable"
+  competencies: [string]
+  artifact_url: string
+  source_trace: string
+  created_at: ISO-8601
+  guardian_verdict: "Pendente | APPROVED | APPROVED_WITH_RECLASSIFICATION | NEEDS_RESOLUTION | REJECTED"
+  confidentiality: "public | sanitized | private"
+  notes: string
